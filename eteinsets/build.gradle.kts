@@ -40,27 +40,30 @@ dependencies {
     implementation(libs.material)
 }
 
-publishing {
-    publications.withType<MavenPublication>().configureEach {
-        if (name == "release") {
-            groupId = "com.dapadz"
-            artifactId = "eteinsets"
-            version = "1.0.0"
-            pom {
-                name.set("eteinsets")
-                description.set("Insets helpers for Android")
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("Release") {
+                groupId = "com.dapadz"
+                artifactId = "eteinsets"
+                version = "1.0.0"
+                pom {
+                    name.set("eteinsets")
+                    description.set("Insets helpers for Android")
+                }
+                from(components["release"])
             }
         }
-    }
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/dapadz/eteinsets")
-            credentials {
-                username = (findProperty("gpr.user") as String?)
-                    ?: System.getenv("USERNAME")
-                password = (findProperty("gpr.key") as String?)
-                    ?: System.getenv("GITHUB_TOKEN")
+        repositories {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/dapadz/eteinsets")
+                credentials {
+                    username = (findProperty("gpr.user") as String?)
+                        ?: System.getenv("USERNAME")
+                    password = (findProperty("gpr.key") as String?)
+                        ?: System.getenv("GITHUB_TOKEN")
+                }
             }
         }
     }
