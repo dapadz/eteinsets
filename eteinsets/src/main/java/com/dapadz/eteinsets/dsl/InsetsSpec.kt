@@ -6,7 +6,6 @@ import com.dapadz.eteinsets.effect.impl.ImeAvoidOverlapsEffect
 import com.dapadz.eteinsets.effect.impl.KeepCenteredUnderImeEffect
 import com.dapadz.eteinsets.effect.impl.SystemBarsToPaddingEffect
 import com.dapadz.eteinsets.effect.impl.SystemBarsToPaddingWhileImeEffect
-import com.dapadz.eteinsets.dsl.insets
 
 /**
  * DSL-конструктор для декларативного описания поведения View при изменении оконных отступов.
