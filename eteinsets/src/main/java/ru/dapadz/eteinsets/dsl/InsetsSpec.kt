@@ -1,11 +1,11 @@
-package com.dapadz.eteinsets.dsl
+package ru.dapadz.eteinsets.dsl
 
-import com.dapadz.eteinsets.dsl.common.SystemBarsPaddingScope
-import com.dapadz.eteinsets.effect.core.InsetEffect
-import com.dapadz.eteinsets.effect.impl.ImeAvoidOverlapsEffect
-import com.dapadz.eteinsets.effect.impl.KeepCenteredUnderImeEffect
-import com.dapadz.eteinsets.effect.impl.SystemBarsToPaddingEffect
-import com.dapadz.eteinsets.effect.impl.SystemBarsToPaddingWhileImeEffect
+import ru.dapadz.eteinsets.dsl.common.SystemBarsPaddingScope
+import ru.dapadz.eteinsets.effect.core.InsetEffect
+import ru.dapadz.eteinsets.effect.impl.ImeAvoidOverlapsEffect
+import ru.dapadz.eteinsets.effect.impl.KeepCenteredUnderImeEffect
+import ru.dapadz.eteinsets.effect.impl.SystemBarsToPaddingEffect
+import ru.dapadz.eteinsets.effect.impl.SystemBarsToPaddingWhileImeEffect
 
 /**
  * DSL-конструктор для декларативного описания поведения View при изменении оконных отступов.

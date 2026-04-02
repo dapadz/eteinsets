@@ -1,8 +1,8 @@
-package com.dapadz.eteinsets.effect.core
+package ru.dapadz.eteinsets.effect.core
 
 import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.WindowInsetsCompat
-import com.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
+import ru.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
 
 /**
  * Расширение [InsetEffect] для обработки событий анимации отступов.

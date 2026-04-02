@@ -1,10 +1,10 @@
-package com.dapadz.eteinsets.dsl
+package ru.dapadz.eteinsets.dsl
 
 import android.view.View
 import androidx.core.view.ViewCompat
-import com.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
-import com.dapadz.eteinsets.dispatcher.InsetsDispatcher
-import com.dapadz.eteinsets.effect.core.InsetEffect
+import ru.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
+import ru.dapadz.eteinsets.dispatcher.InsetsDispatcher
+import ru.dapadz.eteinsets.effect.core.InsetEffect
 /**
  * Эта функция-расширение для [View] позволяет декларативно настроить поведение
  * View в ответ на изменение системных оконных отступов (`WindowInsets`).

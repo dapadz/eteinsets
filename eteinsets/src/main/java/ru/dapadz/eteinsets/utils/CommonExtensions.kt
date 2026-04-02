@@ -1,4 +1,4 @@
-package com.dapadz.eteinsets.utils
+package ru.dapadz.eteinsets.utils
 
 import androidx.core.view.WindowInsetsCompat
 

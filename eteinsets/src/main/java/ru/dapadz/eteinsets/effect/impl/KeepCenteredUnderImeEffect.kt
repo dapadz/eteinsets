@@ -1,9 +1,9 @@
-package com.dapadz.eteinsets.effect.impl
+package ru.dapadz.eteinsets.effect.impl
 
 import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.WindowInsetsCompat
-import com.dapadz.eteinsets.effect.core.AnimatedInsetEffect
-import com.dapadz.eteinsets.dsl.InsetsSpec
+import ru.dapadz.eteinsets.effect.core.AnimatedInsetEffect
+import ru.dapadz.eteinsets.dsl.InsetsSpec
 
 /**
  * Эффект, который удерживает View по центру видимой области экрана,

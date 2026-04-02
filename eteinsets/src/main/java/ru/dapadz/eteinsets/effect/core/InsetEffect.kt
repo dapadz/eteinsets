@@ -1,8 +1,8 @@
-package com.dapadz.eteinsets.effect.core
+package ru.dapadz.eteinsets.effect.core
 
 import android.view.View
 import androidx.core.view.WindowInsetsCompat
-import com.dapadz.eteinsets.dispatcher.InsetsDispatcher
+import ru.dapadz.eteinsets.dispatcher.InsetsDispatcher
 
 /**
  * Абстрактная единица поведения для обработки оконных отступов.

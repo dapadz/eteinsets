@@ -1,11 +1,11 @@
-package com.dapadz.eteinsets.dispatcher
+package ru.dapadz.eteinsets.dispatcher
 
 import android.view.View
 import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.WindowInsetsCompat
-import com.dapadz.eteinsets.effect.core.InsetEffect
-import com.dapadz.eteinsets.utils.imeHeight
-import com.dapadz.eteinsets.dsl.insets
+import ru.dapadz.eteinsets.effect.core.InsetEffect
+import ru.dapadz.eteinsets.utils.imeHeight
+import ru.dapadz.eteinsets.dsl.insets
 
 /**
  * Расширенный [InsetsDispatcher], который отслеживает состояние клавиатуры (IME).

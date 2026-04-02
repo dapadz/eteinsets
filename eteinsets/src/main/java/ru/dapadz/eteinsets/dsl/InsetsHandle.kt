@@ -1,6 +1,6 @@
-package com.dapadz.eteinsets.dsl
+package ru.dapadz.eteinsets.dsl
 
-import com.dapadz.eteinsets.dispatcher.InsetsDispatcher
+import ru.dapadz.eteinsets.dispatcher.InsetsDispatcher
 
 
 

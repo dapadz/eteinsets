@@ -1,4 +1,4 @@
-package com.dapadz.eteinsets.effect.impl
+package ru.dapadz.eteinsets.effect.impl
 
 import android.view.View
 import android.view.ViewGroup
@@ -6,11 +6,11 @@ import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
-import com.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
-import com.dapadz.eteinsets.effect.core.AnimatedInsetEffect
-import com.dapadz.eteinsets.utils.imeHeight
+import ru.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
+import ru.dapadz.eteinsets.effect.core.AnimatedInsetEffect
+import ru.dapadz.eteinsets.utils.imeHeight
 import kotlin.math.max
-import com.dapadz.eteinsets.dsl.InsetsSpec
+import ru.dapadz.eteinsets.dsl.InsetsSpec
 
 /**
  * Эффект, который предотвращает перекрытие View клавиатурой (IME).

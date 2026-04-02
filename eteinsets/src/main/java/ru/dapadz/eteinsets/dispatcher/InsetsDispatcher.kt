@@ -1,4 +1,4 @@
-package com.dapadz.eteinsets.dispatcher
+package ru.dapadz.eteinsets.dispatcher
 
 import android.view.View
 import android.view.ViewGroup
@@ -7,8 +7,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.forEach
-import com.dapadz.eteinsets.effect.core.AnimatedInsetEffect
-import com.dapadz.eteinsets.effect.core.InsetEffect
+import ru.dapadz.eteinsets.effect.core.AnimatedInsetEffect
+import ru.dapadz.eteinsets.effect.core.InsetEffect
 import java.lang.ref.WeakReference
 import kotlin.collections.asSequence
 import androidx.core.view.WindowInsetsAnimationCompat.Callback.DISPATCH_MODE_CONTINUE_ON_SUBTREE

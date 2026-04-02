@@ -1,6 +1,6 @@
-package com.dapadz.eteinsets.dsl.common
+package ru.dapadz.eteinsets.dsl.common
 
-import com.dapadz.eteinsets.dsl.InsetsSpec
+import ru.dapadz.eteinsets.dsl.InsetsSpec
 
 /**
  * Область для настройки поведения эффекта [InsetsSpec.systemBarsPadding].

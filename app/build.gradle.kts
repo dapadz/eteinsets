@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.dapadz.eteinsets"
+    namespace = "ru.dapadz.eteinsets"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.dapadz.eteinsets"
+        applicationId = "ru.dapadz.eteinsets"
         minSdk = 33
         targetSdk = 36
         versionCode = 1

@@ -1,13 +1,13 @@
-package com.dapadz.eteinsets.effect.impl
+package ru.dapadz.eteinsets.effect.impl
 
 import android.view.View
 import androidx.core.graphics.Insets
 import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
-import com.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
-import com.dapadz.eteinsets.effect.core.AnimatedInsetEffect
-import com.dapadz.eteinsets.dsl.common.SystemBarsPaddingScope
+import ru.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
+import ru.dapadz.eteinsets.effect.core.AnimatedInsetEffect
+import ru.dapadz.eteinsets.dsl.common.SystemBarsPaddingScope
 
 /**
  * Эффект, который плавно убирает нижний отступ системной панели (`system navigation bar`)

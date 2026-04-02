@@ -1,10 +1,10 @@
-package com.dapadz.eteinsets.effect.impl
+package ru.dapadz.eteinsets.effect.impl
 
 import android.view.View
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
-import com.dapadz.eteinsets.effect.core.AnimatedInsetEffect
-import com.dapadz.eteinsets.dsl.InsetsSpec
+import ru.dapadz.eteinsets.effect.core.AnimatedInsetEffect
+import ru.dapadz.eteinsets.dsl.InsetsSpec
 
 /**
  * Эффект, который добавляет отступы системных панелей (`system bars`)
