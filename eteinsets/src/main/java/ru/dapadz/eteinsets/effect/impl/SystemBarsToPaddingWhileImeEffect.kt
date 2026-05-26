@@ -88,7 +88,8 @@ class SystemBarsToPaddingWhileImeEffect internal constructor(
             ?: return
 
         val sysBottom = insets.getInsets(WindowInsetsCompat.Type.systemBars()).bottom
-        val imeBottom = insets.getInsets(WindowInsetsCompat.Type.ime()).bottom.toFloat()
+        val imeBottom = (imeDispatcher?.keyboardHeightPx
+            ?: insets.getInsets(WindowInsetsCompat.Type.ime()).bottom).toFloat()
 
         val denominator = when {
             imeMaxHeightPx > 0f -> imeMaxHeightPx

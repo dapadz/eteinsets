@@ -2,6 +2,7 @@ package ru.dapadz.eteinsets.effect.impl
 
 import androidx.core.view.WindowInsetsAnimationCompat
 import androidx.core.view.WindowInsetsCompat
+import ru.dapadz.eteinsets.dispatcher.ImeInsetsDispatcher
 import ru.dapadz.eteinsets.effect.core.AnimatedInsetEffect
 import ru.dapadz.eteinsets.dsl.InsetsSpec
 
@@ -15,6 +16,9 @@ import ru.dapadz.eteinsets.dsl.InsetsSpec
  * @see InsetsSpec.keepCenteredUnderIme
  */
 class KeepCenteredUnderImeEffect : AnimatedInsetEffect() {
+
+    private val imeDispatcher: ImeInsetsDispatcher?
+        get() = dispatcher as? ImeInsetsDispatcher
 
     /** Кэшированная высота экрана в пикселях. */
     private var screenHeightPx: Int = 0
@@ -38,7 +42,8 @@ class KeepCenteredUnderImeEffect : AnimatedInsetEffect() {
      */
     override fun onProgress(insets: WindowInsetsCompat, animations: List<WindowInsetsAnimationCompat>) {
         val view = hostView ?: return
-        val imeHeight = insets.getInsets(WindowInsetsCompat.Type.ime()).bottom.toFloat()
+        val imeHeight = (imeDispatcher?.keyboardHeightPx ?: insets.getInsets(WindowInsetsCompat.Type.ime()).bottom)
+            .toFloat()
 
         // Центр видимой области = (Высота экрана - Высота IME) / 2
         val newCenterY = (screenHeightPx - imeHeight) / 2f

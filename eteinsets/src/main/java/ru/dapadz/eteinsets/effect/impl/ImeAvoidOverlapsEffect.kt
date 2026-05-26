@@ -87,7 +87,7 @@ class ImeAvoidOverlapsEffect(
      * Применяет смещение на каждом кадре анимации IME для плавного движения.
      */
     override fun onProgress(insets: WindowInsetsCompat, animations: List<WindowInsetsAnimationCompat>) {
-        applyOffset(insets.imeHeight())
+        applyOffset(imeDispatcher?.keyboardHeightPx ?: insets.imeHeight())
     }
 
     /**
