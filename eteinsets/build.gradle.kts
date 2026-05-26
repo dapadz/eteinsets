@@ -65,7 +65,7 @@ afterEvaluate {
             create<MavenPublication>("maven") {
                 groupId = "ru.dapadz"
                 artifactId = "eteinsets"
-                version = "1.0.2"
+                version = "1.1.0"
 
                 from(components["release"])
 
