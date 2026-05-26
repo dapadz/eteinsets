@@ -22,7 +22,7 @@
 Добавьте зависимость в ваш `build.gradle.kts` (или `build.gradle`):
 
 ```gradle.kts
-dependencies { implementation("ru.dapadz:eteinsets:1.0.2") }
+dependencies { implementation("ru.dapadz:eteinsets:1.1.0") }
 ```
 
 
